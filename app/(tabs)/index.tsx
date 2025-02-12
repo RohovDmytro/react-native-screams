@@ -8,7 +8,15 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       {PAGES.map((item) => (
-        <Link key={item.id} href={("/" + item.id) as any} replace>
+        <Link
+          key={item.id}
+          href={("/" + item.id) as any}
+          replace
+          style={{
+            height: 32,
+            backgroundColor: "lightgrey",
+          }}
+        >
           <Text>{item.id}</Text>
         </Link>
       ))}
@@ -18,9 +26,8 @@ export default function TabOneScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    padding: 16,
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
     gap: 16,
   },
   title: {
