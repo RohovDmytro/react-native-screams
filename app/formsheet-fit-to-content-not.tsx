@@ -1,22 +1,19 @@
 import { useEffect, useState } from "react";
 import { View } from "react-native";
 
-export default function FormSheet002() {
+export default function FormSheetFitToContentNot() {
   const [height, setHeight] = useState(100);
-  const [color, setColor] = useState("red");
-
   useEffect(() => {
     setTimeout(() => {
       setHeight(500);
-      setColor("blue");
-    }, 1000);
+    }, 800);
   });
 
   return (
     <View
       style={{
         height: height,
-        backgroundColor: color,
+        backgroundColor: "lightblue",
       }}
     />
   );

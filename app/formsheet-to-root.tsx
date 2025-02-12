@@ -5,7 +5,7 @@ export default function FormSheetToRoot() {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={{ paddingTop: 80 }}>
       <Button title="replace -> /" onPress={() => router.replace("/")} />
 
       <Button

@@ -78,7 +78,6 @@ function RootLayoutNav() {
             name={"formsheet-fit-to-content-not"}
             options={{
               presentation: "formSheet",
-              headerShown: false,
               gestureDirection: "vertical",
               animation: "slide_from_bottom",
               sheetAllowedDetents: "fitToContents",
@@ -115,7 +114,9 @@ function RootLayoutNav() {
               gestureDirection: "vertical",
               animation: "slide_from_bottom",
               sheetAllowedDetents: "fitToContents",
-              contentStyle: {},
+              contentStyle: {
+                flex: 1,
+              },
             }}
           />
 
