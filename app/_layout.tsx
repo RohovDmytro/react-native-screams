@@ -158,6 +158,7 @@ function RootLayoutNav() {
               presentation: "formSheet",
               headerShown: true,
               animation: "slide_from_bottom",
+              sheetAllowedDetents: "fitToContents",
             }}
           />
 

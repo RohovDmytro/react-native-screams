@@ -7,7 +7,7 @@ export default function FormSheetRnghSteals() {
 
   return (
     <ScrollView
-      style={{ height: "100%" }}
+      style={{ height: 400 }}
       contentContainerStyle={{ flexGrow: 1, paddingTop: 80 }}
     >
       <Button title="back" onPress={router.back} />
