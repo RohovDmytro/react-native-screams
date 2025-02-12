@@ -1,7 +1,7 @@
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function FormSheetPlayground() {
+export default function FormSheetDeepNavCrash() {
   return (
     <View style={{ height: 400 }}>
       <Link

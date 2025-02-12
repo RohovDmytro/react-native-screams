@@ -118,12 +118,22 @@ function RootLayoutNav() {
         />
 
         <Stack.Screen
+          name={"formsheet-deep-nav-crash"}
+          options={{
+            presentation: "formSheet",
+            headerShown: false,
+            gestureDirection: "vertical",
+            animation: "slide_from_bottom",
+            sheetAllowedDetents: "fitToContents",
+            contentStyle: {},
+          }}
+        />
+
+        <Stack.Screen
           name={"fullscreenmodal-no-bb"}
           options={{
             presentation: "fullScreenModal",
             headerShown: true,
-            headerBackVisible: true,
-            gestureDirection: "vertical",
             animation: "slide_from_bottom",
           }}
         />

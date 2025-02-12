@@ -26,6 +26,10 @@ export default function TabOneScreen() {
         <Text>/formsheet-flex-1</Text>
       </Link>
 
+      <Link href={"/formsheet-deep-nav-crash"}>
+        <Text>/formsheet-deep-nav-crash</Text>
+      </Link>
+
       <Link href={"/fullscreenmodal-no-bb"}>
         <Text>/fullscreenmodal-no-bb</Text>
       </Link>
