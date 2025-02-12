@@ -6,6 +6,10 @@ import { Link } from "expo-router";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
+      <Link href={"/formsheet-playground"}>
+        <Text>/formsheet-playground</Text>
+      </Link>
+
       <Link href={"/formsheet-scroll-vs-close"}>
         <Text>/formsheet-scroll-vs-close</Text>
       </Link>
