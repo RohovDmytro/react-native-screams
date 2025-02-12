@@ -36,7 +36,16 @@
           "launchMode": "most-recent"
         }
       ],
-      "expo-router"
+      ["expo-router"],
+      [
+        "react-native-edge-to-edge",
+        {
+          "android": {
+            "parentTheme": "Light",
+            "enforceNavigationBarContrast": false
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

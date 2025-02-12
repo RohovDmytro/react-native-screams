@@ -113,6 +113,18 @@ function RootLayoutNav() {
             gestureDirection: "vertical",
             animation: "slide_from_bottom",
             sheetAllowedDetents: "fitToContents",
+            contentStyle: {},
+          }}
+        />
+
+        <Stack.Screen
+          name={"fullscreenmodal-no-bb"}
+          options={{
+            presentation: "fullScreenModal",
+            headerShown: true,
+            headerBackVisible: true,
+            gestureDirection: "vertical",
+            animation: "slide_from_bottom",
           }}
         />
       </Stack>

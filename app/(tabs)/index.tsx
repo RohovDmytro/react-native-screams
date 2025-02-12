@@ -25,6 +25,10 @@ export default function TabOneScreen() {
       <Link href={"/formsheet-flex-1"}>
         <Text>/formsheet-flex-1</Text>
       </Link>
+
+      <Link href={"/fullscreenmodal-no-bb"}>
+        <Text>/fullscreenmodal-no-bb</Text>
+      </Link>
     </View>
   );
 }
