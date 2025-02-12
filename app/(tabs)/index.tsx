@@ -1,38 +1,17 @@
 import { StyleSheet } from "react-native";
 
 import { Text, View } from "@/components/Themed";
+import { PAGES } from "@/constants/pages";
 import { Link } from "expo-router";
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Link href={"/formsheet-playground"}>
-        <Text>/formsheet-playground</Text>
-      </Link>
-
-      <Link href={"/formsheet-scroll-vs-close"}>
-        <Text>/formsheet-scroll-vs-close</Text>
-      </Link>
-
-      <Link href={"/formsheet-fit-to-content-not"}>
-        <Text>/formsheet-fit-to-content-not</Text>
-      </Link>
-
-      <Link href={"/formsheet-nav-back"}>
-        <Text>/formsheet-003</Text>
-      </Link>
-
-      <Link href={"/formsheet-flex-1"}>
-        <Text>/formsheet-flex-1</Text>
-      </Link>
-
-      <Link href={"/formsheet-deep-nav-crash"}>
-        <Text>/formsheet-deep-nav-crash</Text>
-      </Link>
-
-      <Link href={"/fullscreenmodal-no-bb"}>
-        <Text>/fullscreenmodal-no-bb</Text>
-      </Link>
+      {PAGES.map((item) => (
+        <Link key={item.id} href={("/" + item.id) as any} replace>
+          <Text>{item.id}</Text>
+        </Link>
+      ))}
     </View>
   );
 }
