@@ -21,6 +21,10 @@ export default function TabOneScreen() {
       <Link href={"/formsheet-nav-back"}>
         <Text>/formsheet-003</Text>
       </Link>
+
+      <Link href={"/formsheet-flex-1"}>
+        <Text>/formsheet-flex-1</Text>
+      </Link>
     </View>
   );
 }
