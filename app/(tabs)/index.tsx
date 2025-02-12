@@ -11,6 +11,7 @@ export default function TabOneScreen() {
         <Link
           key={item.id}
           href={("/" + item.id) as any}
+          replace={!!item.replace}
           style={{
             height: 32,
             backgroundColor: "lightgrey",

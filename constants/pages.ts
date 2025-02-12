@@ -28,5 +28,6 @@ export const PAGES = [
   },
   {
     id: "formsheet-to-root",
+    replace: true,
   },
 ] as const;
