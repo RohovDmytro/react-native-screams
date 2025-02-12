@@ -137,6 +137,8 @@ function RootLayoutNav() {
             options={{
               presentation: "fullScreenModal",
               headerShown: true,
+              headerBackVisible: true,
+              headerBackTitle: "Back",
               animation: "slide_from_bottom",
             }}
           />
