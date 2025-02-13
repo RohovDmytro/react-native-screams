@@ -181,6 +181,17 @@ function RootLayoutNav() {
               sheetAllowedDetents: "fitToContents",
             }}
           />
+
+          <Stack.Screen
+            name={"formsheet-extra-padding"}
+            options={{
+              presentation: "formSheet",
+              headerShown: false,
+              gestureDirection: "vertical",
+              animation: "slide_from_bottom",
+              sheetAllowedDetents: "fitToContents",
+            }}
+          />
         </Stack>
       </GestureHandlerRootView>
     </ThemeProvider>

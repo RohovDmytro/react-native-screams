@@ -33,4 +33,7 @@ export const PAGES = [
   {
     id: "formsheet-dimensions",
   },
+  {
+    id: "formsheet-extra-padding",
+  },
 ] as const;
