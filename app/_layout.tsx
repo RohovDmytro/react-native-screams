@@ -170,6 +170,17 @@ function RootLayoutNav() {
               animation: "slide_from_bottom",
             }}
           />
+
+          <Stack.Screen
+            name={"formsheet-dimensions"}
+            options={{
+              presentation: "formSheet",
+              headerShown: false,
+              gestureDirection: "vertical",
+              animation: "slide_from_bottom",
+              sheetAllowedDetents: "fitToContents",
+            }}
+          />
         </Stack>
       </GestureHandlerRootView>
     </ThemeProvider>

@@ -30,4 +30,7 @@ export const PAGES = [
     id: "formsheet-to-root",
     replace: true,
   },
+  {
+    id: "formsheet-dimensions",
+  },
 ] as const;
