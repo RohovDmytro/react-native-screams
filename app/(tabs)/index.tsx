@@ -1,17 +1,23 @@
 import { StyleSheet } from "react-native";
 
-import { Text, View } from "@/components/Themed";
+import { Text } from "@/components/Themed";
 import { PAGES } from "@/constants/pages";
 import { Link } from "expo-router";
+import { ScrollView } from "react-native-gesture-handler";
 
 export default function TabOneScreen() {
   return (
-    <View style={styles.container}>
+    <ScrollView
+      style={{ flex: 1 }}
+      showsHorizontalScrollIndicator
+      showsVerticalScrollIndicator
+      contentContainerStyle={styles.contentContainerStyle}
+    >
       {PAGES.map((item) => (
         <Link
           key={item.id}
           href={("/" + item.id) as any}
-          replace={!!item.replace}
+          replace={"replace" in item && !!item.replace}
           style={{
             height: 32,
             backgroundColor: "lightgrey",
@@ -20,18 +26,18 @@ export default function TabOneScreen() {
           <Text>{item.id}</Text>
         </Link>
       ))}
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  contentContainerStyle: {
     padding: 16,
-    flex: 1,
+    flexGrow: 1,
     gap: 16,
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: "bold",
   },
   separator: {
